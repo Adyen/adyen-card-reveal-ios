@@ -1,0 +1,468 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		861AB9982B95EBB800732B2D /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861AB9972B95EBB800732B2D /* ViewModifiers.swift */; };
+		861AB99B2B96042F00732B2D /* PublicKeyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861AB99A2B96042F00732B2D /* PublicKeyRequest.swift */; };
+		861AB99D2B96047700732B2D /* PublicKeyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861AB99C2B96047700732B2D /* PublicKeyResponse.swift */; };
+		861AB99F2B96052900732B2D /* CardRevealRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861AB99E2B96052900732B2D /* CardRevealRequest.swift */; };
+		86218CA82BEE4E3D00A89C35 /* AdyenCardReveal in Frameworks */ = {isa = PBXBuildFile; productRef = 86218CA72BEE4E3D00A89C35 /* AdyenCardReveal */; };
+		864829D92B90D1A70067DB25 /* ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864829D82B90D1A70067DB25 /* ExampleApp.swift */; };
+		864829DB2B90D1A70067DB25 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864829DA2B90D1A70067DB25 /* ContentView.swift */; };
+		864829DD2B90D1AA0067DB25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 864829DC2B90D1AA0067DB25 /* Assets.xcassets */; };
+		864829E02B90D1AA0067DB25 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 864829DF2B90D1AA0067DB25 /* Preview Assets.xcassets */; };
+		864829EA2B9200D90067DB25 /* AppApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864829E72B9200D90067DB25 /* AppApiClient.swift */; };
+		864829EB2B9200D90067DB25 /* AppApiContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864829E82B9200D90067DB25 /* AppApiContext.swift */; };
+		864829F22B9201870067DB25 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864829F12B9201870067DB25 /* AppError.swift */; };
+		864829FE2B9211FD0067DB25 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864829FD2B9211FD0067DB25 /* CardView.swift */; };
+		86482A012B92126F0067DB25 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86482A002B92126F0067DB25 /* ViewModel.swift */; };
+		86BEB1292BEBB70B000C3ECC /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BEB1282BEBB70B000C3ECC /* Request.swift */; };
+		86BEB12B2BEBC8C8000C3ECC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BEB12A2BEBC8C8000C3ECC /* Constants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		861AB9972B95EBB800732B2D /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
+		861AB99A2B96042F00732B2D /* PublicKeyRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicKeyRequest.swift; sourceTree = "<group>"; };
+		861AB99C2B96047700732B2D /* PublicKeyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicKeyResponse.swift; sourceTree = "<group>"; };
+		861AB99E2B96052900732B2D /* CardRevealRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRevealRequest.swift; sourceTree = "<group>"; };
+		864829D52B90D1A70067DB25 /* ExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		864829D82B90D1A70067DB25 /* ExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleApp.swift; sourceTree = "<group>"; };
+		864829DA2B90D1A70067DB25 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		864829DC2B90D1AA0067DB25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		864829DF2B90D1AA0067DB25 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		864829E72B9200D90067DB25 /* AppApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppApiClient.swift; sourceTree = "<group>"; };
+		864829E82B9200D90067DB25 /* AppApiContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppApiContext.swift; sourceTree = "<group>"; };
+		864829F12B9201870067DB25 /* AppError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		864829FD2B9211FD0067DB25 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		86482A002B92126F0067DB25 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		86BEB1282BEBB70B000C3ECC /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		86BEB12A2BEBC8C8000C3ECC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		864829D22B90D1A70067DB25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86218CA82BEE4E3D00A89C35 /* AdyenCardReveal in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		861AB9922B922A6D00732B2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		861AB9992B9603E500732B2D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				861AB99A2B96042F00732B2D /* PublicKeyRequest.swift */,
+				861AB99C2B96047700732B2D /* PublicKeyResponse.swift */,
+				861AB99E2B96052900732B2D /* CardRevealRequest.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		864829CC2B90D1A70067DB25 = {
+			isa = PBXGroup;
+			children = (
+				864829D72B90D1A70067DB25 /* ExampleApp */,
+				864829D62B90D1A70067DB25 /* Products */,
+				861AB9922B922A6D00732B2D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		864829D62B90D1A70067DB25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				864829D52B90D1A70067DB25 /* ExampleApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		864829D72B90D1A70067DB25 /* ExampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				864829DA2B90D1A70067DB25 /* ContentView.swift */,
+				86BEB12A2BEBC8C8000C3ECC /* Constants.swift */,
+				864829D82B90D1A70067DB25 /* ExampleApp.swift */,
+				861AB9992B9603E500732B2D /* Models */,
+				864829FF2B92124B0067DB25 /* ViewModel */,
+				864829FC2B9211E80067DB25 /* Views */,
+				864829E62B9200C20067DB25 /* API */,
+				864829F02B9201870067DB25 /* Error */,
+				864829DC2B90D1AA0067DB25 /* Assets.xcassets */,
+				864829DE2B90D1AA0067DB25 /* Preview Content */,
+			);
+			path = ExampleApp;
+			sourceTree = "<group>";
+		};
+		864829DE2B90D1AA0067DB25 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				864829DF2B90D1AA0067DB25 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		864829E62B9200C20067DB25 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				86BEB1282BEBB70B000C3ECC /* Request.swift */,
+				864829E72B9200D90067DB25 /* AppApiClient.swift */,
+				864829E82B9200D90067DB25 /* AppApiContext.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		864829F02B9201870067DB25 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				864829F12B9201870067DB25 /* AppError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		864829FC2B9211E80067DB25 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				864829FD2B9211FD0067DB25 /* CardView.swift */,
+				861AB9972B95EBB800732B2D /* ViewModifiers.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		864829FF2B92124B0067DB25 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				86482A002B92126F0067DB25 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		864829D42B90D1A70067DB25 /* ExampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 864829E32B90D1AA0067DB25 /* Build configuration list for PBXNativeTarget "ExampleApp" */;
+			buildPhases = (
+				864829D12B90D1A70067DB25 /* Sources */,
+				864829D22B90D1A70067DB25 /* Frameworks */,
+				864829D32B90D1A70067DB25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExampleApp;
+			packageProductDependencies = (
+				86218CA72BEE4E3D00A89C35 /* AdyenCardReveal */,
+			);
+			productName = ExampleApp;
+			productReference = 864829D52B90D1A70067DB25 /* ExampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		864829CD2B90D1A70067DB25 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					864829D42B90D1A70067DB25 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 864829D02B90D1A70067DB25 /* Build configuration list for PBXProject "ExampleApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 864829CC2B90D1A70067DB25;
+			packageReferences = (
+				86218CA62BEE4E3D00A89C35 /* XCRemoteSwiftPackageReference "adyen-card-reveal-ios" */,
+			);
+			productRefGroup = 864829D62B90D1A70067DB25 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				864829D42B90D1A70067DB25 /* ExampleApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		864829D32B90D1A70067DB25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				864829E02B90D1AA0067DB25 /* Preview Assets.xcassets in Resources */,
+				864829DD2B90D1AA0067DB25 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		864829D12B90D1A70067DB25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				864829EA2B9200D90067DB25 /* AppApiClient.swift in Sources */,
+				86BEB1292BEBB70B000C3ECC /* Request.swift in Sources */,
+				864829F22B9201870067DB25 /* AppError.swift in Sources */,
+				861AB99F2B96052900732B2D /* CardRevealRequest.swift in Sources */,
+				864829DB2B90D1A70067DB25 /* ContentView.swift in Sources */,
+				864829EB2B9200D90067DB25 /* AppApiContext.swift in Sources */,
+				861AB99B2B96042F00732B2D /* PublicKeyRequest.swift in Sources */,
+				86BEB12B2BEBC8C8000C3ECC /* Constants.swift in Sources */,
+				864829FE2B9211FD0067DB25 /* CardView.swift in Sources */,
+				861AB9982B95EBB800732B2D /* ViewModifiers.swift in Sources */,
+				861AB99D2B96047700732B2D /* PublicKeyResponse.swift in Sources */,
+				86482A012B92126F0067DB25 /* ViewModel.swift in Sources */,
+				864829D92B90D1A70067DB25 /* ExampleApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		864829E12B90D1AA0067DB25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		864829E22B90D1AA0067DB25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		864829E42B90D1AA0067DB25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ExampleApp/Preview Content\"";
+				DEVELOPMENT_TEAM = B2NYSS5932;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adyen.ios.ixguard.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		864829E52B90D1AA0067DB25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ExampleApp/Preview Content\"";
+				DEVELOPMENT_TEAM = B2NYSS5932;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adyen.ios.ixguard.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		864829D02B90D1A70067DB25 /* Build configuration list for PBXProject "ExampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				864829E12B90D1AA0067DB25 /* Debug */,
+				864829E22B90D1AA0067DB25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		864829E32B90D1AA0067DB25 /* Build configuration list for PBXNativeTarget "ExampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				864829E42B90D1AA0067DB25 /* Debug */,
+				864829E52B90D1AA0067DB25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		86218CA62BEE4E3D00A89C35 /* XCRemoteSwiftPackageReference "adyen-card-reveal-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Adyen/adyen-card-reveal-ios";
+			requirement = {
+				branch = "release-1.0.0";
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		86218CA72BEE4E3D00A89C35 /* AdyenCardReveal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86218CA62BEE4E3D00A89C35 /* XCRemoteSwiftPackageReference "adyen-card-reveal-ios" */;
+			productName = AdyenCardReveal;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 864829CD2B90D1A70067DB25 /* Project object */;
+}
