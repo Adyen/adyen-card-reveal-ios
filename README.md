@@ -160,4 +160,4 @@ A successful response will have the following JSON structure:
 
 ## License
 
-This SDK is available under the Apache License, Version 2.0. For more information, see the [LICENSE](https://github.com/Adyen/adyen-card-reveal-ios/blob/main/LICENSE) file.
+This SDK is available under the MIT License. For more information, see the [LICENSE](https://github.com/Adyen/adyen-card-reveal-ios/blob/main/LICENSE) file.
