@@ -17,11 +17,6 @@ https://developer.apple.com/documentation/xcode/adding_package_dependencies_to_y
 
 Drag the dynamic `AdyenCardReveal/XCFramework/Dynamic/AdyenCardReveal.xcframework` to the `Frameworks, Libraries, and Embedded Content` section in your general target settings. Select "Copy items if needed" when asked.
 
-### Static xcFramework
-
-1. Drag the static `AdyenCardReveal/XCFramework/Static/AdyenCardReveal.xcframework` to the `Frameworks, Libraries, and Embedded Content` section in your general target settings.
-2. Make sure the static `AdyenCardReveal.xcframework` is not embedded.
-
 ## Usage
 
 ### PAN Reveal
