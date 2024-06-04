@@ -17,6 +17,11 @@ https://developer.apple.com/documentation/xcode/adding_package_dependencies_to_y
 
 Drag the dynamic `AdyenCardReveal/XCFramework/Dynamic/AdyenCardReveal.xcframework` to the `Frameworks, Libraries, and Embedded Content` section in your general target settings. Select "Copy items if needed" when asked.
 
+### Static xcFramework
+
+1. Drag the static `AdyenCardReveal/XCFramework/Static/AdyenCardReveal.xcframework` to the `Frameworks, Libraries, and Embedded Content` section in your general target settings.
+2. Make sure the static `AdyenCardReveal.xcframework` is not embedded.
+
 ## Usage
 
 ### PAN Reveal
@@ -75,13 +80,13 @@ let pinRevealService = PinRevealService()
 3. Generate an encrypted key with the public key which you received as part of the `JWK` (`publicKey` property):
 
 ```swift
-let encryptedKey = try cardRevealService.generateEncryptedKey(jwk: publicKey)
+let encryptedKey = try pinRevealService.generateEncryptedKey(jwk: publicKey)
 ```
 
 If you fetched the `pem` public key in step 1, then generate an encrypted key with the `pem`:
 
 ```swift
-let encryptedKey = try cardRevealService.generateEncryptedKey(pem: publicKey)
+let encryptedKey = try pinRevealService.generateEncryptedKey(pem: publicKey)
 ```
 
 4. Use the `encryptedKey` to fetch the encrypted PIN from `/bcl/v2/pins/reveal` endpoint. As with the previous requests make this one from your backend and not the app. The `POST` body should have the following structure:
@@ -104,7 +109,7 @@ The response will have the following JSON structure:
 
 ```
 
-5. Use `PinRevealService` to get card data by passing in `encryptedPinBlock` and `token`:
+5. Use `PinRevealService` to get the PIN by passing in `encryptedPinBlock` and `token`:
 
 ```swift
 let pin = try pinRevealService.pin(encryptedPinBlock: encryptedPinBlock, token: token)
@@ -117,7 +122,7 @@ let pin = try pinRevealService.pin(encryptedPinBlock: encryptedPinBlock, token: 
 2. Initialize the service
 
 ```swift
-let pinRevealService = PinChangeService()
+let pinChangeService = PinChangeService()
 ```
 
 3. Generate an encrypted PIN block with public key and the new PIN:

@@ -1,0 +1,15 @@
+{
+  "originHash" : "778e67ba36ef588df52da7059d992d6890a5636631eaa1854747366da34a1f6b",
+  "pins" : [
+    {
+      "identity" : "adyen-card-reveal-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Adyen/adyen-card-reveal-ios",
+      "state" : {
+        "branch" : "release-1.0.0",
+        "revision" : "c4517b5694757f494a5bc71498013b30a0d03414"
+      }
+    }
+  ],
+  "version" : 3
+}
