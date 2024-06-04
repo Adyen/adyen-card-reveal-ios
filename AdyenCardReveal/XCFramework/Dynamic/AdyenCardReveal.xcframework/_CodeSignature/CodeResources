@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/AdyenCardReveal.framework/AdyenCardReveal</key>
 		<data>
-		6xYvQbKz9XlY3bPSMvW0PXRqXIY=
+		j+XusQmxxUBNhkyF91s1fYjMYlc=
 		</data>
 		<key>ios-arm64/AdyenCardReveal.framework/Headers/AdyenCardReveal-Swift.h</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdyenCardReveal.framework/AdyenCardReveal</key>
 		<data>
-		Vk4tlMNOBiqcmpvYvR3RYC2z3/Y=
+		0KJwyKbB3DJxek7+DSxFGcgom30=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdyenCardReveal.framework/Headers/AdyenCardReveal-Swift.h</key>
 		<data>
@@ -91,11 +91,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6xYvQbKz9XlY3bPSMvW0PXRqXIY=
+			j+XusQmxxUBNhkyF91s1fYjMYlc=
 			</data>
 			<key>hash2</key>
 			<data>
-			py9b2utExNingT9anIEYxhoJlRYTrs1g/+eNhJmswpY=
+			zWSVgnvqpTFvtDoU1QDC8UEaAgWco3xCxwqCV4KE+EY=
 			</data>
 		</dict>
 		<key>ios-arm64/AdyenCardReveal.framework/Headers/AdyenCardReveal-Swift.h</key>
@@ -190,11 +190,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Vk4tlMNOBiqcmpvYvR3RYC2z3/Y=
+			0KJwyKbB3DJxek7+DSxFGcgom30=
 			</data>
 			<key>hash2</key>
 			<data>
-			v+n4gkZTJZ5apPf3TlJZAJCiM8G1hQEDqGir4MxmBMo=
+			pQdybY6vQNklToHIIEK21rElP4Sa8PO/+i2RFJ+i5z0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdyenCardReveal.framework/Headers/AdyenCardReveal-Swift.h</key>

@@ -1,0 +1,109 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name AdyenCardReveal
+@_exported import AdyenCardReveal
+import CommonCrypto
+import CryptoKit
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public class PinRevealService {
+  public init()
+  public func generateEncryptedKey(pem: Foundation.Data) throws -> Swift.String
+  public func generateEncryptedKey(jwk: Foundation.Data) throws -> Swift.String
+  public func pin(encryptedPinBlock: Swift.String, token: Swift.String) throws -> Swift.String
+  @objc deinit
+}
+extension AdyenCardReveal.PinRevealService {
+  public enum PinRevealError : Foundation.LocalizedError {
+    case invalidPublicKey
+    case encryptionFailed
+    case keyNotGenerated
+    case invalidEncryptedData
+    case decryptionFailed
+    case unexpectedData
+    public var errorDescription: Swift.String? {
+      get
+    }
+    public static func == (a: AdyenCardReveal.PinRevealService.PinRevealError, b: AdyenCardReveal.PinRevealService.PinRevealError) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public class PinChangeService {
+  public init()
+  public func encryptedPinBlock(pem: Foundation.Data, pin: Swift.String) throws -> AdyenCardReveal.PinChangeService.EncryptedPin
+  public func encryptedPinBlock(jwk: Foundation.Data, pin: Swift.String) throws -> AdyenCardReveal.PinChangeService.EncryptedPin
+  @objc deinit
+}
+extension AdyenCardReveal.PinChangeService {
+  public enum PinChangeError : Foundation.LocalizedError {
+    case invalidPin
+    case unallowedPin
+    case invalidPublicKey
+    case encryptionFailed
+    public var errorDescription: Swift.String? {
+      get
+    }
+    public static func == (a: AdyenCardReveal.PinChangeService.PinChangeError, b: AdyenCardReveal.PinChangeService.PinChangeError) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public struct EncryptedPin {
+    public let encryptedPinBlock: Swift.String
+    public let encryptedKey: Swift.String
+    public let token: Swift.String
+  }
+}
+public class CardRevealService {
+  public init()
+  public func generateEncryptedKey(pem: Foundation.Data) throws -> Swift.String
+  public func generateEncryptedKey(jwk: Foundation.Data) throws -> Swift.String
+  public func cardDetails(encryptedData: Swift.String) throws -> AdyenCardReveal.CardRevealService.CardDetails
+  @objc deinit
+}
+extension AdyenCardReveal.CardRevealService {
+  public struct CardDetails : Swift.Codable, Swift.Equatable {
+    public let cvc: Swift.String
+    public let pan: Swift.String
+    public let expiration: AdyenCardReveal.CardRevealService.CardDetails.Expiration
+    public struct Expiration : Swift.Codable, Swift.Equatable {
+      public let month: Swift.String
+      public let year: Swift.String
+      public static func == (a: AdyenCardReveal.CardRevealService.CardDetails.Expiration, b: AdyenCardReveal.CardRevealService.CardDetails.Expiration) -> Swift.Bool
+      public func encode(to encoder: any Swift.Encoder) throws
+      public init(from decoder: any Swift.Decoder) throws
+    }
+    public static func == (a: AdyenCardReveal.CardRevealService.CardDetails, b: AdyenCardReveal.CardRevealService.CardDetails) -> Swift.Bool
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public enum CardRevealError : Foundation.LocalizedError {
+    case invalidPublicKey
+    case encryptionFailed
+    case keyNotGenerated
+    case invalidEncryptedData
+    case decryptionFailed
+    case unexpectedData
+    public var errorDescription: Swift.String? {
+      get
+    }
+    public static func == (a: AdyenCardReveal.CardRevealService.CardRevealError, b: AdyenCardReveal.CardRevealService.CardRevealError) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+extension AdyenCardReveal.PinRevealService.PinRevealError : Swift.Equatable {}
+extension AdyenCardReveal.PinRevealService.PinRevealError : Swift.Hashable {}
+extension AdyenCardReveal.PinChangeService.PinChangeError : Swift.Equatable {}
+extension AdyenCardReveal.PinChangeService.PinChangeError : Swift.Hashable {}
+extension AdyenCardReveal.CardRevealService.CardRevealError : Swift.Equatable {}
+extension AdyenCardReveal.CardRevealService.CardRevealError : Swift.Hashable {}
